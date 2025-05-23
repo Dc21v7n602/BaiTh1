@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3 - Biểu mẫu đăng nhập</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="p-4">
+
+    <h2>1. Biểu mẫu đăng nhập dạng ngang (Horizontal Form)</h2>
+    <form class="row g-3 align-items-center mb-5">
+        <div class="col-md-4">
+            <label for="username1" class="form-label">Tên đăng nhập</label>
+            <input type="text" class="form-control" id="username1">
+        </div>
+        <div class="col-md-4">
+            <label for="password1" class="form-label">Mật khẩu</label>
+            <input type="password" class="form-control" id="password1">
+        </div>
+        <div class="col-md-4 mt-4">
+            <button type="submit" class="btn btn-primary">Đăng nhập</button>
+        </div>
+    </form>
+
+    <h2>2. Biểu mẫu đăng nhập dạng đứng (Vertical Form)</h2>
+    <form class="mb-5">
+        <div class="mb-3">
+            <label for="username2" class="form-label">Tên đăng nhập</label>
+            <input type="text" class="form-control" id="username2">
+        </div>
+        <div class="mb-3">
+            <label for="password2" class="form-label">Mật khẩu</label>
+            <input type="password" class="form-control" id="password2">
+        </div>
+        <button type="submit" class="btn btn-success">Đăng nhập</button>
+    </form>
+
+    <h2>3. Biểu mẫu đăng nhập dạng một dòng (Inline Form)</h2>
+    <form class="row row-cols-lg-auto g-3 align-items-center mb-5">
+        <div class="col-12">
+            <input type="text" class="form-control" placeholder="Tên đăng nhập">
+        </div>
+        <div class="col-12">
+            <input type="password" class="form-control" placeholder="Mật khẩu">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-warning">Đăng nhập</button>
+        </div>
+    </form>
+
+    <h2>4. Hộp thoại đăng nhập (Login Modal)</h2>
+    <button class="btn btn-info mb-3" data-bs-toggle="modal" data-bs-target="#loginModal">
+        Mở hộp thoại
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel"><i class="fa fa-lock"></i> Đăng nhập</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label"><i class="fa fa-user"></i> Tên đăng nhập</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label"><i class="fa fa-lock"></i> Mật khẩu</label>
+                <input type="password" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-primary">Đăng nhập</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy bỏ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS (for modal) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
