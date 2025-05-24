@@ -2,9 +2,9 @@
 
 Học kỳ 2, Năm học: 2024-2025
 
-**Họ tên**: ...
+**Họ tên**: Trần Tiến Đạt
 
-**MSSV**: ...
+**MSSV**: DC21V7N602
 
-**Lớp HP**: ...
+**Lớp HP**: CT275
 
